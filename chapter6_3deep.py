@@ -33,10 +33,10 @@ for iteration in xrange(60):
         layer_2 = np.dot(layer_1, weights_1_2)
         
         if(i == 3): 
-            print('layer_0', layer_0)           #np array
-            print('my_diff',streetlights[i])    #array
-            print('np.dot:',np.dot(layer_0, weights_0_1))
-            print('relu(np.dot):',relu(np.dot(layer_0, weights_0_1)))
+            print('layer_0', layer_0)                       #np array
+            print('my_diff',streetlights[i])                #array
+            print('np.dot:',np.dot(layer_0, weights_0_1))   #np.dot layer0 weights_0_1
+            print('relu(np.dot):',relu(np.dot(layer_0, weights_0_1)))   #relu on top
             print('layer_1', layer_1)
         
         layer_2_error += np.sum((layer_2 - walk_vs_stop[i:i+1]) ** 2)
