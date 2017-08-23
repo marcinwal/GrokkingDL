@@ -1,5 +1,6 @@
 # regularization as the way to avoid overfitting
 import numpy as np 
+import syslog as sys
 
 np.random.seed(1)
 
